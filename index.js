@@ -1,1 +1,3 @@
-console.log(11111);
+import './index.css'
+import './index.m'
+console.log('i am index.js')
