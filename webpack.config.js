@@ -5,6 +5,12 @@ const ErrorReportPlugin = require('./plugins/ErrorReportPlugin')
 module.exports = {
   mode: 'development',
   entry: './index.js',
+  optimization: {
+    minimize: true,
+    // minimizer: [new TerserPlugin()],
+    //压缩CSS
+    // minimizer: [new OptimizeCSSAssetsPlugin({})],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
