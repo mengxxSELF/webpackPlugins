@@ -17,14 +17,14 @@ module.exports = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
-      {
-        test: /\.m$/,
-        use: [
-          path.resolve(__dirname, 'loaders/1'),
-          path.resolve(__dirname, 'loaders/2'),
-          path.resolve(__dirname, 'loaders/3'),
-        ],
-      },
+      // {
+      //   test: /\.m$/,
+      //   use: [
+      //     path.resolve(__dirname, 'loaders/1'),
+      //     path.resolve(__dirname, 'loaders/2'),
+      //     path.resolve(__dirname, 'loaders/3'),
+      //   ],
+      // },
     ],
   },
   devServer: {
