@@ -10,4 +10,4 @@ function main() {
 
 console.log(2222222, main)
 
-export default { main }
+// export default { main }

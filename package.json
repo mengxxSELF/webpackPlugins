@@ -11,6 +11,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/types": "^7.17.0",
+    "babel-loader": "^8.2.3",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
     "loader-runner": "^4.2.0",

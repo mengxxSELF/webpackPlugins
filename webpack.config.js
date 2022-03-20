@@ -6,7 +6,7 @@ module.exports = {
   mode: 'development',
   entry: './index.js',
   optimization: {
-    minimize: true,
+    minimize: false,
     // minimizer: [new TerserPlugin()],
     //压缩CSS
     // minimizer: [new OptimizeCSSAssetsPlugin({})],
@@ -22,6 +22,15 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.js$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            plugins: [path.resolve(__dirname, 'babel/log.js')],
+          },
+        },
       },
       // {
       //   test: /\.m$/,
